@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-success',
+  selector: 'success-alert',
   templateUrl: './success.component.html',
   styleUrls: ['./success.component.css']
 })
