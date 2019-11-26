@@ -1,3 +1,9 @@
 p {
-    color: red;
+    color: yellow;
+}
+
+.warning-bg {
+    background-color:red;
+    border-radius: 0.5em;
+    /* opacity: 12%; */
 }
