@@ -1,0 +1,6 @@
+.message-body {
+    background-color: turquoise;
+    border-radius: 0.5em;
+    /* z-index: -1;
+    opacity: 20%; */
+}

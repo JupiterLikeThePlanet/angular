@@ -5,5 +5,6 @@ p {
 .warning-bg {
     background-color:red;
     border-radius: 0.5em;
+    background-size: 3em;
     /* opacity: 12%; */
 }
