@@ -14,6 +14,7 @@ import { Component, OnInit } from '@angular/core';
             border-radius: 0.5em;
             margin-left: 2em;
             padding: 1em;
+            border: black solid;
         }
         
 
