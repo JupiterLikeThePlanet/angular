@@ -1,3 +1,15 @@
 h1 {
-    color: plum;
+    color: white;
+}
+
+hr {
+    border-top: 3px solid black;
+}
+
+.messages {
+    background-color: wheat;
+    border-radius: 0.25em;
+    padding: 2em;
+    border: black solid;
+
 }
