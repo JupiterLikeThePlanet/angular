@@ -18,5 +18,12 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent{
+    //as long as a string is returned, values can be interpolated in  {{}}
+    serverId = 10
+    status = 'offline'
+
+    // you can also declare the value type. Not necessary but you can
+    // serverId: number = 10
+    // status: string = 'offline'
 
 }
