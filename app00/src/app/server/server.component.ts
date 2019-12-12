@@ -22,7 +22,7 @@ export class ServerComponent{
     serverId = 10;
     status = 'offline';
     onlineStatus = 'online';
-
+   
     // you can also declare the value type. Not necessary but you can
     // serverId: number = 10
     // status: string = 'offline'
@@ -31,5 +31,6 @@ export class ServerComponent{
     serverStatus(){
         return this.onlineStatus ;
     }
+    
 
 }
