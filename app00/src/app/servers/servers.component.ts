@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   allowNewServer = false;
+  propertyBinding = "property bound"
 
   constructor() {
 
