@@ -14,6 +14,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   propertyBinding = "property bound"
+  serverAdded=""
 
   constructor() {
 
@@ -25,6 +26,10 @@ export class ServersComponent implements OnInit {
 
 
   ngOnInit() {
+  }
+
+  onAddServer(){
+    return this.serverAdded = "SERVER ADDED!"
   }
 
 }

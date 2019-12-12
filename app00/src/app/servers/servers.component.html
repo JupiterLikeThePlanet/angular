@@ -1,6 +1,6 @@
 <div class="container"></div>
 
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onAddServer()">Add Server</button>
 <p [innerText]="propertyBinding"></p>
 <h3>Servers component presents:</h3>
 <hr>
@@ -12,3 +12,4 @@
 <h5> server 2 </h5>
 <div class="app-server"></div>
 <!-- <app-server></app-server> -->
+<p [innerText]="serverAdded"></p>
