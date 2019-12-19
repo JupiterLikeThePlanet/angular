@@ -15,6 +15,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   propertyBinding = "property bound"
   serverAdded=""
+  serverName = ""
 
   constructor() {
 
@@ -30,6 +31,11 @@ export class ServersComponent implements OnInit {
 
   onAddServer(){
     return this.serverAdded = "SERVER ADDED!"
+  }
+
+  onUpdateServerName(event){
+    this.serverName = (<HTMLInputElement>event.target).value;
+    // console.log(event.target.value); 
   }
 
 }
