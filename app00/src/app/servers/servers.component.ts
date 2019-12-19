@@ -30,7 +30,7 @@ export class ServersComponent implements OnInit {
   }
 
   onAddServer(){
-    return this.serverAdded = "SERVER ADDED!"
+    return this.serverAdded = "SERVER ADDED! Name of server is "+ this.serverName
   }
 
   onUpdateServerName(event){
