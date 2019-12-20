@@ -7,6 +7,15 @@
             [(ngModel)]="username"
         >
 
+        <p [innerText]="username"></p>
+
+    </div>
+
+    <div>
+        <button class="btn btn-primary"  
+            (click)="onReset()" 
+            [disabled]="!username">Reset
+        </button>
     </div>
 </div>
 

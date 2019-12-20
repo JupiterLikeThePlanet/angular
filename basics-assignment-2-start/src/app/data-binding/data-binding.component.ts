@@ -7,12 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
   
-  username="horses"
+  username=""
 
 
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  onReset(event){
+    if(this.username != ""){
+      this.username= "";
+    }
   }
 
 }
