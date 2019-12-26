@@ -1,0 +1,21 @@
+<div class="container">
+    
+        <p [innerText]="words"></p>
+        <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="words"
+        >
+    <div>
+        <button
+            (click)="onReset()"
+            [disabled]="!words"
+       >Click Here 
+
+       </button>
+    </div>
+
+    
+
+</div
+>
