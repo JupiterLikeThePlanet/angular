@@ -16,6 +16,7 @@ export class ServersComponent implements OnInit {
   propertyBinding = "property bound"
   serverAdded= ""
   serverName = "enter text here"
+  serverCreated = false;
 
   constructor() {
 
@@ -30,6 +31,7 @@ export class ServersComponent implements OnInit {
   }
 
   onAddServer(){
+    this.serverCreated = true;
     return this.serverAdded = "SERVER ADDED! Name of server is "+ this.serverName
   }
 
