@@ -19,6 +19,17 @@
     [disabled]="!allowNewServer" 
     (click)="onAddServer()"> Add Server
 </button>
+
+<hr>
+
+<p *ngIf="serverCreated; else noServer" [innerText]="serverAdded"></p>
+<ng-template #noServer>
+    <p>There is no server name</p>
+</ng-template>
+
+<hr>
+
+
 <p [innerText]="propertyBinding"></p>
 <h3>Servers component presents:</h3>
 <hr>
@@ -30,4 +41,4 @@
 <h5> server 2 </h5>
 <div class="app-server"></div>
 <!-- <app-server></app-server> -->
-<p *ngIf="serverCreated" [innerText]="serverAdded"></p>{{serverName}}
+

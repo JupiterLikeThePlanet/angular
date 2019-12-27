@@ -15,7 +15,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   propertyBinding = "property bound"
   serverAdded= ""
-  serverName = "enter text here"
+  serverName = ""
   serverCreated = false;
 
   constructor() {
