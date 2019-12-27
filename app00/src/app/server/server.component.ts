@@ -21,8 +21,14 @@ export class ServerComponent{
     //as long as a string is returned, values can be interpolated in  {{}}
     serverId = 10;
     status = 'offline';
-    onlineStatus = 'online';
+    online
+    onlineStatus = "offline"
+    // onlineStatus: string 'offline'
     
+    constructor() {
+        this.onlineStatus = Math.random() > 0.5 ? 'online' : 'offline';
+    }
+
     // you can also declare the value type. Not necessary but you can
     // serverId: number = 10
     // status: string = 'offline'
@@ -32,5 +38,9 @@ export class ServerComponent{
         return this.onlineStatus ;
     }
     
+    getColor(){
+        return this.onlineStatus === "online" ? "green" : "red";
+    }
+
 
 }
