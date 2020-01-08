@@ -33,12 +33,19 @@
 <p [innerText]="propertyBinding"></p>
 <h3>Servers component presents:</h3>
 <hr>
-<h5> server 1 </h5>
+
+<app-server *ngFor="let server of servers"> </app-server>
+
+
+
+
+
+<!-- <h5> server 1 </h5> -->
 <!-- <app-server></app-server> -->
-<div class="app-server"></div>
+<!-- <div class="app-server"></div> -->
 <!-- <div app-server></div> -->
 
-<h5> server 2 </h5>
-<div class="app-server"></div>
+<!-- <h5> server 2 </h5> -->
+<!-- <div class="app-server"></div> -->
 <!-- <app-server></app-server> -->
 

@@ -17,6 +17,7 @@ export class ServersComponent implements OnInit {
   serverAdded= ""
   serverName = ""
   serverCreated = false;
+  servers = ["server 4453", "server 0924"]
 
   constructor() {
 
@@ -32,6 +33,8 @@ export class ServersComponent implements OnInit {
 
   onAddServer(){
     this.serverCreated = true;
+    this.servers.push(this.serverName);
+    console.log(this.servers)
     return this.serverAdded = "SERVER ADDED! Name of server is "+ this.serverName
   }
 
