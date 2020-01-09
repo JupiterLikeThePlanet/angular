@@ -8,12 +8,18 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-  // servers = ["Se"]
+
   smells = false;
+  clicks = 0
+  clickArray = []
 
   onDetails(){
-    this.smells = (!this.smells)
-    console.log(this.smells)
-    return this.smells
+    this.smells = (!this.smells);
+    // console.log(this.smells);
+    this.clicks += 1
+    console.log("clicks: "+this.clicks);
+    this.clickArray.push(this.clicks);
+    console.log(this.clickArray);
+
   }
 }

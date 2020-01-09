@@ -19,7 +19,12 @@
 
       <button class="btn btn-primary" (click)="onDetails()">Display Details</button>
       <p *ngIf="smells" > This tuna smells </p>
-
+      <div
+        
+        *ngFor="let clickNumber of clickArray">  
+        <p>{{clickNumber}}</p>
+      </div>
+    
     </div>
 
   </div>
