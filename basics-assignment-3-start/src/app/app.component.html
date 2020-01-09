@@ -21,7 +21,10 @@
       <p *ngIf="smells" > This tuna smells </p>
       <div
         
-        *ngFor="let clickNumber of clickArray">  
+        *ngFor="let clickNumber of clickArray"
+        [ngStyle]="{backgroundColor: clickNumber >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'yellow-text' : clickNumber >=5}"
+      >  
         <p>{{clickNumber}}</p>
       </div>
     
